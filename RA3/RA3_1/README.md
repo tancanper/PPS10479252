@@ -4,7 +4,7 @@ Este documento describe los pasos necesarios para aplicar medidas de hardening e
 
 # Tasks
 
-* [TASK_1](#Preparación del Entorno): Preparación del Entorno.
+* [TASK_1](#Preparación-del-Entorno): Preparación del Entorno.
 * [TASK_2](#URL_TASK_2): Apache Hardening
 
 # Preparación del Entorno
