@@ -1,28 +1,49 @@
 # RA3_1
 
-Introduction [INTRO](https://github.com/tancanper/PPS10479252/blob/744efb03ae89728d59b73b9d1f0359c9896f7cf7/RA3/RA3_1/assets/Introducci%C3%B3n) :
+Este documento describe los pasos necesarios para aplicar medidas de hardening en un servidor Apache. Se configurarán certificados SSL/TLS, un OWASP y se implementarán mejores prácticas de seguridad. Además, se crearán imágenes Docker.
 
 # Tasks
 
-* [TASK_1](#URL_TASK_1): XXX
-* [TASK_2](#URL_TASK_2): XXX
+* [TASK_1](#Preparación del Entorno): Preparación del Entorno.
+* [TASK_2](#URL_TASK_2): Apache Hardening
 
-# Task_1
-
-Intro...
-
-![IMG](URL_IMG)
-
-
-
-Example code:
-
+# Preparación del Entorno
+## Instalación de Herramientas
+1. Actualizar paquetes y repositorios
 ```
-$ git clone https://github.com/openssh/openssh-portable
-$ patch -p1 < ~/path/to/openssh.patch
-$ autoreconf
-$ ./configure
-$ make
+sudo apt update && sudo apt upgrade -y
 ```
+2. Instalar Apache
+```
+sudo apt install apache2 -y
+```
+3. Instalar Docker y Docker Compose
+```
+sudo apt install docker.io -y
+sudo systemctl enable --now docker
+```
+4. Instalar OpenSSL para gestión de certificados
+```
+sudo apt install openssl -y
+```
+5. Instalar UFW y permitir tráfico HTTP y HTTPS
+```
+sudo apt install ufw -y
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw enable
+```
+6. Instalar ModSecurity para Apache
+```
+sudo apt install libapache2-mod-security2 -y
+sudo a2enmod security2
+sudo systemctl restart apache2
+```
+7. Instalar Fail2Ban
+```
+sudo apt install fail2ban -y
+```
+# Apache Hardening
+El hardening de Apache es un proceso que sirve para reducir los ataque en un servidor web. Esto incluye deshabilitar módulos innecesarios, configurar reglas de seguridad y aplicar restricciones en las solicitudes HTTP.
 
-# Task_2
+# Webgrafía
