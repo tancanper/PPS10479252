@@ -47,3 +47,5 @@ sudo apt install fail2ban -y
 El hardening de Apache es un proceso que sirve para reducir los ataque en un servidor web. Esto incluye deshabilitar módulos innecesarios, configurar reglas de seguridad y aplicar restricciones en las solicitudes HTTP.
 
 # Webgrafía
+* Hardening del servidor. (2021, 1 marzo). https://psegarrac.github.io/Ciberseguridad-PePS/tema3/seguridad/web/2021/03/01/Hardening-Servidor.html
+
