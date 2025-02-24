@@ -1,6 +1,6 @@
 # RA3_1
 
-Introduction [INTRO]([RA3/RA3_1/assets/Introducción](https://github.com/tancanper/PPS10479252/blob/RA3/RA3/RA3_1/assets/Introducci%C3%B3n)) :
+Introduction [INTRO](https://github.com/tancanper/PPS10479252/blob/744efb03ae89728d59b73b9d1f0359c9896f7cf7/RA3/RA3_1/assets/Introducci%C3%B3n) :
 
 # Tasks
 
