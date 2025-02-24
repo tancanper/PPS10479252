@@ -1,6 +1,6 @@
 # RA3_1
 
-Introduction [INTRO](URL_TASKS) :
+Introduction [INTRO](RA3/RA3_1/assets/Introducción) :
 
 # Tasks
 
@@ -12,6 +12,8 @@ Introduction [INTRO](URL_TASKS) :
 Intro...
 
 ![IMG](URL_IMG)
+
+
 
 Example code:
 
