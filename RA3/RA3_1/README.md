@@ -5,7 +5,7 @@ Este documento describe los pasos necesarios para aplicar medidas de hardening e
 # Tasks
 
 * [TASK_1](#Preparación-del-Entorno): Preparación del Entorno.
-* [TASK_2](#URL_TASK_2): Apache Hardening
+* [TASK_2](#Apache-Hardening): Apache Hardening
 
 # Preparación del Entorno
 ## Instalación de Herramientas
@@ -46,6 +46,11 @@ sudo apt install fail2ban -y
 # Apache Hardening
 El hardening de Apache es un proceso que sirve para reducir los ataque en un servidor web. Esto incluye deshabilitar módulos innecesarios, configurar reglas de seguridad y aplicar restricciones en las solicitudes HTTP.
 
+# Conclusión
+
 # Webgrafía
-* Hardening del servidor. (2021, 1 marzo). https://psegarrac.github.io/Ciberseguridad-PePS/tema3/seguridad/web/2021/03/01/Hardening-Servidor.html
+* Hardening del servidor. (2021, 1 marzo). https://psegarrac.github.io/Ciberseguridad-PePS/tema3/seguridad/web/2021/03/01/Hardening-Servidor.html.
+* Certificado digital. (2020, 8 noviembre). https://psegarrac.github.io/Ciberseguridad-PePS/tema1/practicas/2020/11/08/P1-SSL.html.
+* Kumar, C. (2024, 21 diciembre). Apache Web Server Hardening and Security Guide. Geekflare. https://geekflare.com/cybersecurity/apache-web-server-hardening-security/.
+* Kumar, C. (2024a, mayo 15). Guía de seguridad y endurecimiento del servidor web Nginx. Geekflare Spain. https://geekflare.com/es/nginx-webserver-security-hardening-guide/.
 
