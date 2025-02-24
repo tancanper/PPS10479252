@@ -3,7 +3,7 @@
 Exploration of the ...
 
 Includes the following:
-* [RA3_1](https://github.com/tancanper/PPS10479252/tree/RA3/RA3/RA3_1):
+* [RA3_1](https://github.com/tancanper/PPS10479252/tree/RA3/RA3/RA3_1): Apache Hardening
 * [RA3_2](#TODO):
 * [RA3_3](#TODO):
 * [RA3_4](#TODO):
