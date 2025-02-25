@@ -19,10 +19,11 @@ sudo apt update && sudo apt upgrade -y
 ```
 sudo apt install apache2 -y
 ```
-3. Instalar Docker y Docker Compose
+3. Instalar Docker
 ```
 sudo apt install docker.io -y
-sudo systemctl enable --now docker
+sudo systemctl enable docker
+sudo systemctl start docker
 ```
 4. Instalar OpenSSL para gestión de certificados
 ```
@@ -41,13 +42,18 @@ sudo apt install libapache2-mod-security2 -y
 sudo a2enmod security2
 sudo systemctl restart apache2
 ```
-7. Instalar Fail2Ban
+7. Instalar las CRS de OWASP
+```
+sudo apt install modsecurity-crs -y
+```
+8. Instalar Fail2Ban
 ```
 sudo apt install fail2ban -y
 ```
 # Apache Hardening
 El hardening de Apache es un proceso que sirve para reducir los ataque en un servidor web. Esto incluye deshabilitar módulos innecesarios, configurar reglas de seguridad y aplicar restricciones en las solicitudes HTTP.
 ## CSP
+
 ## Web Application Firewall
 ## OWASP
 ## Evitar ataques DDOS
