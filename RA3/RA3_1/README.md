@@ -150,7 +150,7 @@ KeepAliveTimeout 5
 3. Reiniciar Apache.
 
 # Certificados SSL
-[Dockerfile.](#https://hub.docker.com/r/pps10479252/apache_ssl)
+[Dockerfile](#https://hub.docker.com/r/pps10479252/apache_ssl).
 
 # Mejores Prácticas y Docker
 
