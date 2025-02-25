@@ -53,7 +53,25 @@ sudo apt install fail2ban -y
 # Apache Hardening
 El hardening de Apache es un proceso que sirve para reducir los ataque en un servidor web. Esto incluye deshabilitar módulos innecesarios, configurar reglas de seguridad y aplicar restricciones en las solicitudes HTTP.
 ## CSP
+1. Editar el archivo de configuración del sitio en Apache.
+```
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+2. Añadir la directiva CSP dentro del bloque <VirtualHost>.
+```
+<VirtualHost *:80>
+    ...
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self'; object-src 'none';"
+    ...
+</VirtualHost>
+```
+![CSP](https://github.com/user-attachments/assets/50c66d70-d865-4165-9329-428ad8caa35c)
 
+3. Habilitar el módulo de encabezados y reiniciar Apache.
+```
+sudo a2enmod headers
+sudo systemctl restart apache2
+```
 ## Web Application Firewall
 ## OWASP
 ## Evitar ataques DDOS
