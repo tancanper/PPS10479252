@@ -104,8 +104,35 @@ sudo nano /etc/modsecurity/modsecurity.conf
    ![WAF - Ataque XSS](https://github.com/user-attachments/assets/22dc17ba-8ac9-4713-9f34-780d7569a909)
 
 ## OWASP
+1. Clonar el repositorio de OWASP CRS.
+```
+git clone https://github.com/SpiderLabs/owasp-modsecurity-crs.git
+```
+2. Mover los archivos de configuración a la carpeta de ModSecurity.
+```
+cd owasp-modsecurity-crs
+sudo mv crs-setup.conf.example /etc/modsecurity/crs-setup.conf
+sudo mv rules/ /etc/modsecurity
+```
+3. Comprobar que el archivo security2.conf contenga las siguientes lineas:
+```
+<IfModule security2_module>
+	# Default Debian dir for modsecurity's persistent data
+	SecDataDir /var/cache/modsecurity
+	SecRuleEngine On
+	# Keeping your local configuration in that directory
+	# will allow for an easy upgrade of THIS file and
+	# make your life easier
+    IncludeOptional /etc/modsecurity/*.conf
+	Include /etc/modsecurity/rules/*.conf	
+</IfModule>
+```
+4. Comprobar funcionamiento.
 
+   4.1 Modificar el archivo de configuración del Host Virtual.
+   ![OWASP - Host Virtual](https://github.com/user-attachments/assets/b1e049c5-cf30-4e19-8d52-4f1fac94ce41)
 
+5. 
 ## Evitar ataques DDOS
 
 # Certificados SSL
