@@ -11,40 +11,40 @@ Este documento describe los pasos necesarios para aplicar medidas de hardening e
 
 # Preparación del Entorno
 ## Instalación de Herramientas
-1. Actualizar paquetes y repositorios
+1. Actualizar paquetes y repositorios.
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-2. Instalar Apache
+2. Instalar Apache.
 ```
 sudo apt install apache2 -y
 ```
-3. Instalar Docker
+3. Instalar Docker.
 ```
 sudo apt install docker.io -y
 sudo systemctl enable docker
 sudo systemctl start docker
 ```
-4. Instalar OpenSSL para gestión de certificados
+4. Instalar OpenSSL para gestión de certificados.
 ```
 sudo apt install openssl -y
 ```
-5. Instalar UFW y permitir tráfico HTTP y HTTPS
+5. Instalar UFW y permitir tráfico HTTP y HTTPS.
 ```
 sudo apt install ufw -y
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 sudo ufw enable
 ```
-6. Instalar ModSecurity para Apache
+6. Instalar ModSecurity para Apache.
 ```
 sudo apt install libapache2-mod-security2 -y
 ```
-7. Instalar las CRS de OWASP
+7. Instalar las CRS de OWASP.
 ```
 sudo apt install modsecurity-crs -y
 ```
-8. Instalar Fail2Ban
+8. Instalar Fail2Ban.
 ```
 sudo apt install fail2ban -y
 ```
@@ -91,6 +91,7 @@ sudo nano /etc/modsecurity/modsecurity.conf
 
 4. Volver a reiniciar Apache.
 5. Comprobar funcionamiento.
+
    5.1. Crer un archivo de prueba en el DocumentRoot de Apache.
    ```
    sudo nano /var/www/html/prueba.php
