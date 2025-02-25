@@ -39,8 +39,6 @@ sudo ufw enable
 6. Instalar ModSecurity para Apache
 ```
 sudo apt install libapache2-mod-security2 -y
-sudo a2enmod security2
-sudo systemctl restart apache2
 ```
 7. Instalar las CRS de OWASP
 ```
@@ -65,14 +63,33 @@ sudo nano /etc/apache2/sites-available/000-default.conf
     ...
 </VirtualHost>
 ```
-![CSP](https://github.com/user-attachments/assets/50c66d70-d865-4165-9329-428ad8caa35c)
+![CSP - Config](https://github.com/user-attachments/assets/104b413d-0129-49cc-b4ba-44e82fcb542d)
 
 3. Habilitar el módulo de encabezados y reiniciar Apache.
 ```
 sudo a2enmod headers
 sudo systemctl restart apache2
 ```
+![CSP - headers](https://github.com/user-attachments/assets/bfb22460-02ee-4a79-b91e-c03114b4511c)
+
 ## Web Application Firewall
+1. Habilitar el módulo de seguridad en Apache.
+```
+sudo a2enmod security2
+```
+2. Reiniciar Apache para aplicar los cambios.
+```
+sudo systemctl restart apache2
+```
+3. Configurar las reglas de ModSecurity.
+```
+sudo cp /etc/modsecurity/modsecurity.conf-recommended /etc/modsecurity/modsecurity.conf
+sudo nano /etc/modsecurity/modsecurity.conf
+# Buscar la siguiente línea: SecRuleEngine DetectionOnly; Cambiar DetectionOnly por On.
+```
+![Modsecurity](https://github.com/user-attachments/assets/973114a6-f0aa-46e2-a844-93fa4ac177d3)
+
+4. Volver a reiniciar Apache.
 ## OWASP
 ## Evitar ataques DDOS
 
