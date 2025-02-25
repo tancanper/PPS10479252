@@ -50,7 +50,8 @@ El hardening de Apache es un proceso que sirve para reducir los ataque en un ser
 ## CSP
 ## Web Application Firewall
 ## OWASP
-### Evitar ataques DDOS
+## Evitar ataques DDOS
+
 # Certificados SSL
 
 # Mejores Prácticas y Docker
