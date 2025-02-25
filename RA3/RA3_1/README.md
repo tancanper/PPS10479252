@@ -151,7 +151,7 @@ KeepAliveTimeout 5
 
 # Certificados SSL
 [Imagen Docker](https://hub.docker.com/r/pps10479252/apache_ssl).
-[Dockerfile]()
+[Dockerfile](https://github.com/tancanper/PPS10479252/blob/RA3/RA3/RA3_1/assets/Dockerfile)
 
 # Mejores Prácticas y Docker
 
