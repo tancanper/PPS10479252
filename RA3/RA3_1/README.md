@@ -131,9 +131,23 @@ sudo mv rules/ /etc/modsecurity
 
    4.1 Modificar el archivo de configuración del Host Virtual.
    ![OWASP - Host Virtual](https://github.com/user-attachments/assets/b1e049c5-cf30-4e19-8d52-4f1fac94ce41)
-
-5. 
+   4.2 Ejecutar comando.
+   ```
+   curl localhost:8080/index.html?testparam=test
+   ```
 ## Evitar ataques DDOS
+1. Editar el archivo de configuración de Apache.
+```
+sudo nano /etc/apache2/apache2.conf
+```
+3. Modificar parámetros
+```
+Timeout 60
+KeepAlive On
+MaxKeepAliveRequests 100
+KeepAliveTimeout 5
+```
+3. Reiniciar Apache.
 
 # Certificados SSL
 
