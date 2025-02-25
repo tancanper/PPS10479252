@@ -90,7 +90,21 @@ sudo nano /etc/modsecurity/modsecurity.conf
 ![Modsecurity](https://github.com/user-attachments/assets/973114a6-f0aa-46e2-a844-93fa4ac177d3)
 
 4. Volver a reiniciar Apache.
+5. Comprobar funcionamiento.
+   5.1. Crer un archivo de prueba en el DocumentRoot de Apache.
+   ```
+   sudo nano /var/www/html/prueba.php
+   ```
+   ![WAF](https://github.com/user-attachments/assets/57bda759-0c8f-4aa7-bcc1-cb9a1c5932f8)
+   5.2. Ataque XSS. Escribir en el campo de texto:
+   ```
+   <script>alert('Ataque XSS');</script>
+   ```
+   ![WAF - Ataque XSS](https://github.com/user-attachments/assets/22dc17ba-8ac9-4713-9f34-780d7569a909)
+
 ## OWASP
+
+
 ## Evitar ataques DDOS
 
 # Certificados SSL
