@@ -7,7 +7,6 @@ Este documento describe los pasos necesarios para aplicar medidas de hardening e
 * [TASK_1](#Preparación-del-Entorno): Preparación del Entorno.
 * [TASK_2](#Apache-Hardening): Apache Hardening.
 * [TASK_3](#Certificados-SSL): Certificados SSL.
-* [TASK_4](#Mejores-Prácticas-y-Docker): Mejores Prácticas y Docker.
 
 # Preparación del Entorno
 ## Instalación de Herramientas
@@ -153,10 +152,6 @@ KeepAliveTimeout 5
 [Imagen Docker](https://hub.docker.com/r/pps10479252/apache_ssl).
 
 [Dockerfile](https://github.com/tancanper/PPS10479252/blob/RA3/RA3/RA3_1/assets/Dockerfile).
-
-# Mejores Prácticas y Docker
-
-# Conclusión
 
 # Webgrafía
 * Hardening del servidor. (2021, 1 marzo). https://psegarrac.github.io/Ciberseguridad-PePS/tema3/seguridad/web/2021/03/01/Hardening-Servidor.html.
