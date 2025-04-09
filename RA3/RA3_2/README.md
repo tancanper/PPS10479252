@@ -9,7 +9,7 @@ Este documento describe los pasos seguidos para superar los niveles low y medium
 
 # Instalación DVWA
 
-Para la instalación de DVWA se han seguido los pasos del siguiente video proporcionado en su repositorio oficial: [Installing DVWA on Kali running in VirtualBox](https://www.youtube.com/watch?v=WkyDxNJkgQ4&ab_channel=MrCloudArchitect)
+Para la instalación de DVWA se han seguido los pasos del siguiente video proporcionado en su repositorio oficial: [Installing DVWA on Kali running in VirtualBox](https://www.youtube.com/watch?v=WkyDxNJkgQ4&ab_channel=RobinWood)
 
 ![IMG](URL_IMG)
 
