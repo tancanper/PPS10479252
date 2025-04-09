@@ -4,9 +4,9 @@ Este documento describe los pasos seguidos para superar los niveles low y medium
 
 # Tasks
 
-* [1.](#Instalación-DVWA): Instalación DVWA
-* [2.](#Level-Low): Level Low
-* [3.](#Level-Medium): Level Medium
+* [Instalación DVWA](#Instalación-DVWA)
+* [Level Low](#Level-Low)
+* [Level Medium](#Level-Medium)
 
 # Instalación DVWA
 
