@@ -1,6 +1,6 @@
 # RA3_2
 
-Introduction [INTRO](URL_TASKS) :
+Este documento describe los pasos seguidos para superar los niveles low y medium de la herramienta DVWA (Damn Vulnerable Web Application).
 
 # Tasks
 
