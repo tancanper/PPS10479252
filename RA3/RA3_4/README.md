@@ -1,26 +1,19 @@
-# RA3_1
-
-Introduction [INTRO](URL_TASKS) :
+# RA3_4
 
 # Tasks
 
-* [TASK_1](#URL_TASK_1): XXX
-* [TASK_2](#URL_TASK_2): XXX
+* [Csrf](#Csrf)
+* [Cors](#Cors)
+* [Dom-based](#Dom-based)
+* [Cross-site-scripting](#Cross-site-scripting)
+* [Host-header](#Host-header)
 
-# Task_1
+# Csrf
 
-Intro...
+# Cors
 
-![IMG](URL_IMG)
+# Dom-based
 
-Example code:
+# Cross-site-scripting
 
-```
-$ git clone https://github.com/openssh/openssh-portable
-$ patch -p1 < ~/path/to/openssh.patch
-$ autoreconf
-$ ./configure
-$ make
-```
-
-# Task_2
+# Host-header
