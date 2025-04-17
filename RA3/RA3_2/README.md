@@ -21,7 +21,8 @@ service mariadb start
 # URL acceso: http://localhost/DVWA
 ```
 
-
+Una vez dentro, podremos ajustar el nivel de dificultad dentro de la pestaña "DVWA Security".
+![image](https://github.com/user-attachments/assets/347bc4f3-5ae2-4496-aab0-7e332ac0eaf2)
 
 # Level Low
 
